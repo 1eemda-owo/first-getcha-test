@@ -1,5 +1,8 @@
 import React from "react";
 import axios from "axios";
+import Movie from "./Movie";
+import "./App.css";
+import { Title } from "@material-ui/icons";
 
 class App extends React.Component {
   state = {
@@ -19,7 +22,31 @@ class App extends React.Component {
 
   render() {
     const { isLoading, movies } = this.state;
-    return <div>{isLoading ? "Loading..." : movies.map(movie => {console.log(movie);})}</div>;
+    return (
+      <section className="Box">
+        {isLoading ? 
+        (
+          <div className="loader">
+            <span className="loader_text"> Loading... </span>
+          </div> 
+        ) : 
+        (
+          <div className="movies_info">
+            {movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  title={movie.title}
+                  rating={movie.rating}
+                  poster={movie.small_cover_image}
+                />
+              );
+            })}
+            ;
+          </div>
+        )}
+      </section>
+    );
   }
 }
 
