@@ -30,8 +30,8 @@
 .loader_text{
     animation: loading_text 1s infinite alternate;
     position: absolute;
-    top: 60%;
-    margin-top: -60px;
+    top: 65%;
+    margin-top: -65px;
     left: 50%;
     margin-left: -50px;
 }

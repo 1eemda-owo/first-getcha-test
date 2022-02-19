@@ -1,0 +1,28 @@
+@import "./reset.css";
+
+body{
+    background: #0a0b07;
+    color: whitesmoke;
+}
+
+.movie_box{
+    width: 230px;
+    height: 400px;
+    display: grid;
+    margin: 10px;
+    text-align: center;
+}
+
+.movie_poster{
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+.movie_title{
+    padding-bottom: 5px;
+}
+
+.movie_rating{
+    font-size: 85%;
+    font-weight: bold;
+    color: rgb(240, 167, 9);
+}
