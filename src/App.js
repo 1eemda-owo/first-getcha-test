@@ -1,15 +1,19 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Intro from "./views/Intro";
+import { Route, Switch } from "react-router-dom";
+import Intro from "./views/Intro/Intro";
+import NavBar from "./views/Nav/NavBar";
 import LandingPage from "./views/Landing/LandingPage";
+import { Detail } from "./views/Landing/DetailPage";
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Intro />} />
-        <Route path="/main" element={<LandingPage />} />
-      </Routes>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Intro} />
+        <Route exact path="/home" component={LandingPage} />
+        <Route exact path="/home/:id" component={Detail} />
+      </Switch>
     </div>
   );
 }

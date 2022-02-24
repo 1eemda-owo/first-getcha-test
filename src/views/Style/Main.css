@@ -3,14 +3,19 @@
 body{
     background: #0a0b07;
     color: whitesmoke;
+    text-align: center;
+}
+
+.movies{
+    width: 40%;
+    height: 100%;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .movie_box{
-    width: 230px;
-    height: 400px;
-    display: grid;
-    margin: 10px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .movie_poster{
