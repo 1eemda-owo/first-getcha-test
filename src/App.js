@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Intro from "./views/Intro/Intro";
 import NavBar from "./views/Nav/NavBar";
 import LandingPage from "./views/Landing/LandingPage";
-import { Detail } from "./views/Landing/DetailPage";
+import Detail from "./views/Landing/DetailPage";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Intro} />
         <Route exact path="/home" component={LandingPage} />
-        <Route exact path="/home/:id" component={Detail} />
+        <Route exact path="/home/detail" component={Detail} />
       </Switch>
     </div>
   );
