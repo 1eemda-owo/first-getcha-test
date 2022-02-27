@@ -8,10 +8,10 @@ import "../Style/Intro.css";
 function Intro() {
   return (
     <section className="intro">
-      <div className="bg">
+      <div className="intro_bg">
         <h1>See What`s Next</h1>
         <Link to="/home">
-          <div className="start_box">시작하기</div>
+          <div className="intro_box">시작하기</div>
         </Link>
       </div>
     </section>

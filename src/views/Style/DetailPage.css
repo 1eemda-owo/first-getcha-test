@@ -1,6 +1,6 @@
 @import "./reset.css";
 
-.bg{ 
+.detail_bg{ 
     width: 1600px;
     height: 500px;
     object-fit: cover;
@@ -10,7 +10,7 @@
     margin-top: 10px;
 }
 
-.poster{
+.detail_poster{
     position: absolute;
     top: 350px;
     left: 15%;
@@ -21,7 +21,7 @@
     font-family: sans-serif;
 }
 
-.title{
+.detail_title{
     width: 1000px;
     position: absolute;
     font-size: 3em;
@@ -29,13 +29,13 @@
     margin-top: 20px;
 }
 
-.rating{
+.detail_rating{
     position: absolute;
     left: 1670px;
     margin-top: 10px;
 }
 
-.intro{
+.detail_intro{
     width: 1000px;
     position: absolute;
     left: 520px;

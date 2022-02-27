@@ -7,7 +7,7 @@ a{
     font-weight: bold;
 }
 
-.start_box{
+.intro_box{
     width: 370px;
     height: 70px;
     background: rgb(236, 20, 20);
@@ -19,13 +19,13 @@ a{
     padding-left: 20px;
 }
 
-.bg{
+.intro_bg{
     background: url(../img/BG.png);
     background-size: cover;
     height: 100vh;
 }
 
-.bg::before{
+.intro_bg::before{
     content: '';
     background: linear-gradient(to right,black,transparent);
     position: absolute;

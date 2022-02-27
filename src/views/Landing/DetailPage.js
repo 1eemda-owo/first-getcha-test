@@ -14,12 +14,12 @@ class DetailPage extends React.Component {
     if (location.state) {
       return (
         <div className="detail_box">
-          <img src={location.state.bg} className="bg" />
-          <img src={location.state.poster} className="poster" />
+          <img src={location.state.bg} className="detail_bg" />
+          <img src={location.state.poster} className="detail_poster" />
           <div className="detail_info">
-            <p className="title">{location.state.title}</p>
-            <p className="rating">★ {location.state.rating}/10</p>
-            <span className="intro">{location.state.intro}</span>
+            <p className="detail_title">{location.state.title}</p>
+            <p className="detail_rating">★ {location.state.rating}/10</p>
+            <span className="detail_intro">{location.state.intro}</span>
           </div>
         </div>
       );
