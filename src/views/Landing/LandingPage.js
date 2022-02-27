@@ -41,8 +41,6 @@ class LandingPage extends React.Component {
                 rating={movie.rating}
                 poster={movie.medium_cover_image}
                 bg={movie.background_image}
-                like={movie.like_count}
-                download={movie.download_count}
                 intro={movie.summary}
               />
             ))}

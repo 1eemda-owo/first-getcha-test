@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import "../Style/Main.css";
 import { Link } from "react-router-dom";
 
-function Movie({ title, poster, rating, year, bg, like, intro, id }) {
+function Movie({ title, poster, rating, bg, intro, id }) {
   return (
     <div className="movie_box">
-      <div>
+      <div className="movie_poster">
         <Link
           to={{
             pathname: "/home/detail",
-            state: { title, poster, rating, year, bg, like, intro },
+            state: { title, poster, rating, bg, intro },
           }}
         >
           <img src={poster} alt={title} />
@@ -28,9 +28,7 @@ Movie.propTypes = {
   title: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
-  year: PropTypes.number.isRequired,
   bg: PropTypes.string.isRequired,
-  like: PropTypes.number.isRequired,
   intro: PropTypes.string.isRequired,
 };
 

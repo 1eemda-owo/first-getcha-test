@@ -1,1 +1,44 @@
 @import "./reset.css";
+
+.bg{ 
+    width: 1600px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);  
+    margin-top: 10px;
+}
+
+.poster{
+    position: absolute;
+    top: 350px;
+    left: 15%;
+    transform: translate(-15%);  
+}
+
+.detail_info{
+    font-family: sans-serif;
+}
+
+.title{
+    width: 1000px;
+    position: absolute;
+    font-size: 3em;
+    left: 520px;
+    margin-top: 20px;
+}
+
+.rating{
+    position: absolute;
+    left: 1670px;
+    margin-top: 10px;
+}
+
+.intro{
+    width: 1000px;
+    position: absolute;
+    left: 520px;
+    top: 650px;
+    line-height: 20px;
+}

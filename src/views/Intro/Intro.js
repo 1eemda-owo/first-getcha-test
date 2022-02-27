@@ -7,9 +7,14 @@ import "../Style/Intro.css";
 
 function Intro() {
   return (
-    <Link to="/home">
-      <div className="start_box"> 시작하기 </div>
-    </Link>
+    <section className="intro">
+      <div className="bg">
+        <h1>See What`s Next</h1>
+        <Link to="/home">
+          <div className="start_box">시작하기</div>
+        </Link>
+      </div>
+    </section>
   );
 }
 

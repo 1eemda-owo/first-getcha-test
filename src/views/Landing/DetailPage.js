@@ -1,4 +1,5 @@
 import React from "react";
+import "../Style/DetailPage.css";
 
 class DetailPage extends React.Component {
   componentDidMount() {
@@ -13,15 +14,11 @@ class DetailPage extends React.Component {
     if (location.state) {
       return (
         <div className="detail_box">
-          <div className="detail_image">
-            <img src={location.state.bg} className="bg" />
-            <img src={location.state.poster} className="poster" />
-          </div>
+          <img src={location.state.bg} className="bg" />
+          <img src={location.state.poster} className="poster" />
           <div className="detail_info">
             <p className="title">{location.state.title}</p>
             <p className="rating">★ {location.state.rating}/10</p>
-            <p className="like">♥ {location.state.like}</p>
-            <p className="year">{location.state.year}</p>
             <span className="intro">{location.state.intro}</span>
           </div>
         </div>
